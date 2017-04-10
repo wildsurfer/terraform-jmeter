@@ -185,9 +185,9 @@ When the tests are finished you can download the results using SCP:
 $ scp -i .ssh/jmeter root@$MASTER:results.jtl .
 ```
 
-**Important!** If you will run test more than one time you will see data from previous tests in `result.jtl`. If this behaviour isn't what you need be sure to clean it up before running new test:
+**Important!** If you plan to run tests more than once make sure to clean up previous results before running new tests, otherwise you will see data from previous tests in `result.jtl`.
 
-```bash
+``` bash
 $ ssh -i .ssh/jmeter root@$MASTER rm -vf results.jtl
 ```
 
